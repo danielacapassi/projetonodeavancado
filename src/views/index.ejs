@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Projeto Node - Dani Capassi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <style>
+      .conteudo img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-success p-5" style="height: 100vh">
+      <div class="container border p-4 bg-white">
+        <h1 class="display-6">Localizador Github: Usuário e Repositório</h1>
+        <p class="display-8">
+          Digite o usuário + repositório e retorna mais detalhes
+        </p>
+        <hr />
+
+        <div class="card-body">
+          <form action="/envia-github" method="POST">
+            <div class="form-group">
+              <label for="cep">Nome Usuário</label>
+              <input
+                class="form-control"
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite um nome de usuário válido. Ex: danielacapassi"
+              />
+
+              <label for="cep">Repositório</label>
+              <input
+                class="form-control"
+                type="text"
+                name="repositorio"
+                id="repositorio"
+                placeholder="Digite um repositorio válido desse usuário. Ex: projetoredux"
+              />
+
+              <input
+                type="submit"
+                class="btn btn-success my-3"
+                value="Buscar"
+              />
+              <br />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
